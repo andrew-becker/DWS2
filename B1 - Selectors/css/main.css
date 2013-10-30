@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	font-family: sans-serif;
+}
+body{
+	max-width: 960px;
+	margin: 36px auto;
+}
+#wrapper {
+	width: 100%;
+	background: #E1ECF4;
+}
+#sidebar{
+	width: 33%;
+	float: left;
+}
+#mainContent{
+	width: 66%;
+	float: right;
+}
+#foot{
+	clear: both;
+}
+h1{
+	font-size: 2em;
+	margin-bottom: 5px;
+}
+h2{
+	font-size: 1.6em;
+	margin-top: 5px;
+}
+h1, h2, h3, p, li{
+	font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+	background-color: tan;
+}
+.horizNav li{
+	display: inline;
+}
+a[href$=".html"]{
+	font-size: 1.2em;
+	margin: 3px 15px 3px 15px;
+}
+nav ul li:last-child{
+	margin-right: 0px;
+}
+nav ul li:nth-child(1) a{
+	margin-left: 0px;
+}
+li a[href^="#"]{
+	color: #CCC;
+	text-decoration: none; 
+}
+img[alt*=lanes]{
+	width: 400px;
+}
+
