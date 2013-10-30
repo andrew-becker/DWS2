@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	font-family: sans-serif;
+}
+body{
+	max-width: 960px;
+	margin: 36px auto;
+}
+#wrapper {
+	width: 100%;
+	background: #E1ECF4;
+}
+#sidebar{
+	width: 33%;
+	float: left;
+}
+#mainContent{
+	width: 66%;
+	float: right;
+}
+#foot{
+	clear: both;
+}
+h1{
+	font-size: 2em;
+	margin-bottom: .555555556%; /* 5/900=.00555555556 */
+}
+h2{
+	font-size: 1.6em;
+	margin-top: .555555556%; /* 5/900=.00555555556 */
+}
+h1, h2, h3, p, li{
+	font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+	background-color: tan;
+}
+.horizNav li{
+	display: inline;
+}
+a[href$=".html"]{
+	font-size: 1.2em;
+	margin: .333333333% 1.6666667% .333333333% 1.6666667%; /* 3/900= .00333333333%    15/900=.016666667 */
+}
+nav ul li:last-child{
+	margin-right: 0%;
+}
+nav ul li:nth-child(1) a{
+	margin-left: 0%;
+}
+li a[href^="#"]{
+	color: #CCC;
+	text-decoration: none; 
+}
+#lanes_container{
+	width: 44.44444444%; /* 400/900=.4444444444 */
+	float: right;
+}
+img[alt*=lanes]{
+	width: 100%;
+}
+article{
+	float: left;
+}
+#mainContent h3{
+	float: left;
+}
+#mainContent p{
+	margin-top: 0%;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 480px){
+	#mainContent, #sidebar{
+		width: 100%;
+		clear: both;
+		float: left;
+	}
+	#sidebar{
+		border-bottom-style: dotted;
+	}
+	a[href$=".html"]{
+	font-size: 1.4em;
+	}
+	.horizNav li{
+	display: block;
+	}
+}
+@media screen and (min-width: 481px) and (max-width: 620px){
+	a[href$=".html"]{
+		font-size: .9em;
+	}
+	#sidebar ul li{
+		padding-bottom: 10px;
+	}
+}
+@media screen and (min-width:621px) and (max-width: 900px){
+	#sidebar{
+		width: 31%
+	}
+	#mainContent{
+		width: 64%
+	}
+}
