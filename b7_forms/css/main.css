@@ -5,7 +5,7 @@
 	width: 100%;
 	font-family: Tahoma, Geneva, sans-serif
 }
-#survey hgroup{
+#survey heading{
 	margin-bottom: 30px;
 }
 #survey div{
@@ -92,7 +92,7 @@
 }
 
 @media screen and (max-width: 480px){	
-	#survey hgroup{
+	#survey heading{
 		margin-bottom: 30px;
 	}
 	#survey fieldset{
