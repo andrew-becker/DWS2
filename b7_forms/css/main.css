@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#survey {
+	width: 100%;
+	font-family: Tahoma, Geneva, sans-serif
+}
+#survey hgroup{
+	margin-bottom: 30px;
+}
+#survey div{
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+}
+#survey span#range{
+	float: right;
+	font-size: .8em;
+	text-align: center;
+	width: 40%;
+	clear: both;
+}
+#survey span.radioBtn{
+	float: right;
+	width: 20%;
+}
+#survey legend{
+	color: #AAA;
+	font-size: 0.8em;
+	margin-bottom: 2px;
+}
+#survey fieldset{
+	border: 1px #DDD solid;
+	margin-bottom: 20px;
+	padding: 2%;
+}
+#survey label{
+	width: 40%;
+	float: left;
+}
+#survey input{
+	width: 40%;
+	float: right;
+	height: 15px;
+	font-size: .9em;
+}
+#survey textarea{
+	width: 40%;
+	float: right;
+	height: 30px;
+	font-size: .9em;
+}
+#survey #final{
+	border: none;
+}
+#survey #final input{
+	float: right;
+	width: 4%;
+}
+#survey #final label{
+	float: right;
+	width: 35%;
+}
+#survey #final input#submit{
+	height: 34px;
+	float: right;
+	margin-top: 20px;
+	font-size: 1.25em;
+	border-radius: 9px;
+	width: 40%;
+	/*Gradient*/
+	background: #d0e4f7; /* Old browsers */
+
+	background: -moz-linear-gradient(top,  #d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, 	#539fe1 79%, #87bcea 100%); /* FF3.6+ */
+	
+	background: -webkit-gradient(linear, left top, left bottom, 		color-stop(0%,#d0e4f7), color-stop(24%,#73b1e7), color-stop(50%,#0a77d5), color-stop(79%,#539fe1), color-stop(100%,#87bcea)); /* Chrome,Safari4+ */
+	
+	background: -webkit-linear-gradient(top,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* Chrome10+,Safari5.1+ */
+	
+	background: -o-linear-gradient(top,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* Opera 11.10+ */
+	
+	background: -ms-linear-gradient(top,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* IE10+ */
+	
+	background: linear-gradient(to bottom,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* W3C */
+	
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 ); /* IE6-9 */
+
+
+}
+#survey input#favColor{
+	height: 40px;
+}
+
+@media screen and (max-width: 480px){	
+	#survey hgroup{
+		margin-bottom: 30px;
+	}
+	#survey fieldset{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
+	#survey span#range{
+		float: left;
+		width: 100%
+	}
+	#survey span.radioBtn{
+		float: left;
+		width: 100%;
+	}
+	#survey label{
+		width: 100%;
+		float: left;
+	}
+	#survey input{
+		width: 100%;
+		float: left;
+		height: 20px;
+		margin-top: 10px;
+	}
+	#survey textarea{
+		width: 100%;
+		float: left;
+		height: 30px;
+		font-size: .9em;
+		margin-top: 10px;
+	}
+	#survey #final input{
+		float: left;
+		width: 100%;
+	}
+	#survey #final label{
+		float: left;
+		width: 100%;
+	}
+	#survey #final input#submit{
+		height: 34px;
+		float: left;
+		margin-top: 20px;
+		font-size: 1.25em;
+	}
+	#survey input#favColor{
+		height: 30px;
+	}
+}

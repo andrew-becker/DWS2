@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+<title>Forms</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.7.1.js"></script>
+<script src="js-webshim/minified/extras/modernizr-custom.js"></script>
+<script>
+	$.webshims.polyfill();
+</script>
+</head>
+
+<body>
+	<script>
+		function showValue(newValue)
+		{
+			document.getElementById("range").innerHTML=newValue;
+		}
+	</script>
+	<!--Requirements:
+    	The form should collect data about the person’s name, address, favorite color, a brief description for why they like that color, their birthdate, phone number, place 				                 of employment, start date, and how long they have worked their.
+    	html5 attributes
+		labels for inputs
+        checkbox
+        select list
+        radio
+        range
+        calendar
+        polyfill
+        textbox that allow for a maximum of 30 characters to be entered
+        textfield-->
+    <div id="container">
+    	<form id="survey" method="post">
+        	<hgroup>
+            	<h1>User Survey</h1>
+                <h2>Please tell us a little about yourself</h2>
+            </hgroup>
+            <fieldset>
+            <legend>Personal Info</legend>
+            <div>
+            	<label for="firstName">First name</label>
+                <input id="firstName" name"firstName" type="text" placeholder="John" required aria-required="true" autofocus >
+            </div>
+            <div>
+            	<label for="lastName">Last name</label>
+                <input id="lastName" name="lastName" type="text" placeholder="Smith" required aria-required="true" >
+            </div>
+            <div>
+            	<label for="address">Street Address</label>
+                <input id="address" name="address" type="text" placeholder="123 Main St" required aria-required="true" >
+            </div>
+            <div>
+            	<label for="city">City</label>
+                <input id="city" name="city" type="text" placeholder="Baltimore" required aria-required="true" >
+            </div>
+            <div>
+            	<label for="state">State</label>
+                <input id="state" name="state" type="text" list="states">
+                <datalist id="states">
+                	<select>
+                    	<option value="Alabama">Alabama</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Arizona">Arizona</option>
+                        <option value="Arkansas">Arkansas</option>
+                        <option value="California">California</option>
+                        <option value="Colorado">Colorado</option>
+                        <option value="Connecticut">Connecticut</option>
+                        <option value="Delaware">Delaware</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Idaho">Idaho</option>
+                        <option value="Illinois">Illinois</option>
+                        <option value="Indiana">Indiana</option>
+                        <option value="Iowa">Iowa</option>
+                        <option value="Kansas">Kansas</option>
+                        <option value="Kentucky">Kentucky</option>
+                        <option value="Louisiana">Louisiana</option>
+                        <option value="Maine">Maine</option>
+                        <option value="Maryland">Maryland</option>
+                        <option value="Massachusetts">Massachusetts</option>
+                        <option value="Michigan">Michigan</option>
+                        <option value="Minnesota">Minnesota</option>
+                        <option value="Mississippi">Mississippi</option>
+                        <option value="Missouri">Missouri</option>
+                        <option value="Montana">Montana</option>
+                        <option value="Nebraska">Nebraska</option>
+                        <option value="Nevada">Nevada</option>
+                        <option value="New Hampshire">New Hampshire</option>
+                        <option value="New Jersey">New Jersey</option>
+                        <option value="New Mexico">New Mexico</option>
+                        <option value="New York">New York</option>
+                        <option value="North Carolina">North Carolina</option>
+                        <option value="North Dakota">North Dakota</option>
+                        <option value="Ohio">Ohio</option>
+                        <option value="Oklahoma">Oklahoma</option>
+                        <option value="Oregon">Oregon</option>
+                        <option value="Pennsylvania">Pennsylvania</option>
+                        <option value="Rhode Island">Rhode Island</option>
+                        <option value="South Carolina">South Carolina</option>
+                        <option value="South Dakota">South Dakota</option>
+                        <option value="Tennessee">Tennessee</option>
+                        <option value="Texas">Texas</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Vermont">Vermont</option>
+                        <option value="Virginia">Virginia</option>
+                        <option value="Washington">Washington</option>
+                        <option value="West Virginia">West Virginia</option>
+                        <option value="Wisconsin">Wisconsin</option>
+                        <option value="Wyoming">Wyoming</option>
+                    </select>
+                </datalist>
+            </div>
+            <div>
+            	<label for="zip">Zip Code</label>
+                <input id="zip" name="zip" type="number" required aria-required="true">
+            </div>
+            <div>
+            	<label for="birthdate">Birthdate</label>
+                <input id="birthdate" name="birthdate" type="date" required aria-required="true">
+            </div>
+            <div>
+            	<label for="phoneNumber">Phone number</label>
+                <input id="phoneNumber" name="phoneNumber" type="tel" placeholder="555-555-5555" required aria-required="true">
+            </div>
+            <!--<div>
+            	<label for="gender">Gender</label>
+                <span class="radioBtn"><input id="gender" name="gender" type="radio">Male</span>
+                <span class="radioBtn"><input id="gender" name="gender" type="radio">Female</span>
+            </div>-->
+            </fieldset>
+            
+            <fieldset>
+            <legend>Preferences</legend>
+            <div>
+            	<label for="favColor">What is your favorite color?</label>
+                <input id="favColor" name="favColor" type="color" required aria-required="true">
+            </div>
+            <div>
+            	<label for="reason">Why is this your favorite color?</label>
+                <textarea name="textarea" rows="2" placeholder="Maximum 30 characters" maxlength="30"></textarea>
+                
+            </div>
+            </fieldset>
+            
+            <fieldset>
+            <legend>Employment Information</legend>
+            <div>
+            	<label for="place">Place of employment</label>
+                <input id="place" name="place" type="text" required aria-required="true">
+            </div>
+            <div>
+            	<label for="startDate">Start date</label>
+                <input id="startDate" name="startDate" type="date" required aria-required="true">
+            </div>
+            <div>
+            	<label for="term">Time of employment</label>
+                <input id="term" name="term" type="range" min="1" max="40" value="1" onChange="showValue(this.value)" ><span id="range">1</span>
+            </div>
+            </fieldset>
+            
+            <fieldset id="final">
+            <div>
+            	<label for="mail">Check here if we can add you to our mailing list</label>
+                <input id="mail" name="mail" type="checkbox">
+            </div>
+            <div>
+            	<label for="submit"></label>
+                <input id="submit" name="submit" type="submit">
+            </div>
+           	</fieldset>
+        	
+            
+    	</form> 
+   	</div>
+</body>
+</html>
