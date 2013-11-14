@@ -1,0 +1,240 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#container header h1{
+	position: relative;
+	margin-bottom: 2px;
+	z-index:5;
+	top: 5px;
+	left: 1%;
+	font-size: 2em;
+	width: 99%;
+}
+
+#container header h2{
+	margin-top: 2px;
+	z-index: 6;
+	position: relative;
+	top: 2px;
+	left: 1%;
+	font-size: 1.2em;
+}
+
+#signin{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: black;
+	text-decoration: none;
+	border: 1px black solid;
+	background: #A77449;
+	color: #E4B762;
+	padding: 5px;
+	z-index:4;
+}
+#signin:hover{
+	color: #FF0;
+}
+
+/*Nav Styles*/
+nav{
+	background: #ddc587; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ddc587 0%, #cea008 100%, #207cca 100%, #7db9e8 100%); /* FF3.6+ */	
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ddc587), color-stop(100%,#cea008), color-stop(100%,#207cca), color-stop(100%,#7db9e8)); /* 			         Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ddc587 0%,#cea008 100%,#207cca 100%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ddc587 0%,#cea008 100%,#207cca 100%,#7db9e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ddc587 0%,#cea008 100%,#207cca 100%,#7db9e8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ddc587 0%,#cea008 100%,#207cca 100%,#7db9e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ddc587', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+nav li {
+	display: inline;
+	padding: 15px 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 3px;
+}
+nav li:hover{
+	background-color: white;
+}
+nav ul li a{
+	text-decoration: none;
+	color: green;
+}
+
+#head{
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 15px;
+	border: 2px solid black;
+	position: relative;
+	height: 100px;
+	width: 97%;
+	
+}
+#one{
+	position: absolute;
+	background-color: green;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+#two{
+	position: absolute;
+	background-color: white;
+	height: 100%;
+	width: 67%;
+	left: 33%;
+	z-index: 2;
+}
+#three{
+	position: absolute;
+	background-color: orange;
+	height: 100%;
+	width: 33%;
+	left: 67%;
+	z-index: 3;
+}
+#sidebar{
+	margin-left: 1%;
+	width: 30%;
+	float: left;
+}
+#mainContent{
+	width: 60%;
+	float: right;
+	margin-right: 1%;
+}
+footer{
+	clear: both;
+	padding-top: 30px;
+	text-align: center;
+	width: 100%;
+}
+footer p{
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+@media screen and (max-width: 480px){
+	nav ul{
+		padding: 1%;
+		text-align: center;
+		width: 99%;
+	}
+	nav li {
+	display: block;
+	padding: 10px 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 1.2em;
+
+	}
+	#head{
+		margin-bottom: 15px;
+		border: 2px solid black;
+		height: 130px;
+		
+	}
+	#container header h1{
+		position: relative;
+		margin-bottom: 2px;
+		z-index:5;
+		top: 35px;
+		left: 1%;
+		font-size: 2em;
+		width: 99%;
+	}
+	
+	#container header h2{
+		margin-top: 2px;
+		z-index: 6;
+		position: relative;
+		top: 35px;
+		left: 1%;
+		font-size: 1.2em;
+	}
+	
+	#sidebar{
+		width: 98%;
+		margin: 1%;
+	}
+	#mainContent{
+		width: 98%;
+		margin: 1%;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 675px){
+	nav ul{
+	padding: 1%;
+	text-align: center;
+	width: 99%;
+	}
+	nav li{
+	display: block;
+	padding: 5px 10px;
+	margin-bottom: 5px;
+	font-size: 1.2em;
+	}
+	#head{
+		margin-bottom: 15px;
+		border: 2px solid black;
+		height: 130px;
+		
+	}
+	#container header h1{
+		position: relative;
+		margin-bottom: 2px;
+		z-index:5;
+		top: 35px;
+		left: 1%;
+		font-size: 2em;
+		width: 99%;
+	}
+	
+	#container header h2{
+		margin-top: 2px;
+		z-index: 6;
+		position: relative;
+		top: 35px;
+		left: 1%;
+		font-size: 1.2em;
+	}
+	
+	#sidebar{
+		width: 98%;
+		margin: 1%;
+	}
+	#mainContent{
+		width: 98%;
+		margin: 1%;
+	}
+}
+
+@media screen and (min-width: 676px) and (max-width: 750px){
+	nav ul{
+	padding: 1%;
+	text-align: center;
+	width: 99%;
+	}
+	nav li{
+	display: inline;
+	padding: 5px 10px;
+	margin-bottom: 5px;
+	font-size: 1.1em;
+	}
+}
+
+
+	
+	
+
+
+
