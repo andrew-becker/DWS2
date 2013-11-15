@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#container header h1{
+	position: relative;
+	margin-bottom: 2px;
+}
+
+#container header h2{
+	margin-top: 2px;
+	font-size: 1.2em;
+}
+img{
+	height: 250px;
+	width: 100%;
+}
+.imgContainer{
+	margin-right: 2.777777%;
+	margin-top: 2.777777%;
+	float: left;
+}
+#gallery{
+	padding-left: 2.777777%;
+}
+img[alt*=bread]{
+	transition: border-radius .8s ease .5s;
+}
+img[alt*=bread]:hover{
+	border-radius: 80px;
+}
+img[alt*=chicken]:hover{
+	-webkit-transform: scale(1.3);
+}
+img[alt*=soup]:hover{
+	-webkit-transform: rotate(10deg);
+}
+img[alt*=ribs]:hover{
+	-webkit-transform: skew(3deg, 4deg);
+}
+img[alt*=steak]:hover{
+	-webkit-transform: translate(20px, 10px);
+}
+img[alt*=cake]:hover{
+	-webkit-transform: scale(.7);
+}
+
+@media screen and (min-width: 781px){
+	.imgContainer{
+		width: 30.48148%;
+	}
+}
+@media screen and (min-width: 781px) and (max-width: 1079px){
+	img{
+		height: 200px;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 780px){
+	.imgContainer{
+		width: 47%;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 680px){
+	img{
+		height: 200px;
+	}
+	
+}
+
+@media screen and (max-width: 480px){
+	.imgContainer{
+		width: 96%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 30px;
+		float: none;
+	}
+	#gallery{
+		padding-left: 0;
+	}
+}
+
+	
+	
+
+
+
