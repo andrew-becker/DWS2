@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Java House - Contact Us</title>
+
+  
+  <link rel="stylesheet" href="css/foundation.css">
+  
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+      	<header class="large-12 pull-12 columns">
+        	<h1>The Java House</h1>
+            <h2 class="subheader">Turning coffee into an artform</h2>
+        </header>
+        </div>
+		<div class="row">
+        <nav class ="top-bar">
+        	<ul class="title-area">
+            	<li class="name">
+                	
+                </li>
+                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+            <section class="top-bar-section">
+            <!--left nav-->
+            <ul class="left">
+            	<li class="divider"></li>
+            	<li class="active"><a href="index.html">Home</a></li>
+                <li class="divider"></li>
+                <li class="has-dropdown"><a href="#">Our Menu</a>
+                    <ul class="dropdown">
+                    	<li><a href="#">Brewed Coffee</a></li>
+                        <li><a href="#">Espresso Drinks</a></li>
+                        <li><a href="#">Iced Beverages</a></li>
+                        <li><a href="#">Food</a></li>
+                    </ul>
+                </li>
+                <li><a href="coffeetypes.html">Coffee Types</a>
+                <li><a href="#">Roasting Process</a></li>
+                <li><a href="#">Upcoming Events</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+ 		</section>
+        </nav>
+        </div>
+        
+        <form id="contactUs" method="post">
+        	
+            	<h1>Contact Us</h1>
+                <p>Please fill out the form with your information and leave a comment and will will respond to you within 24 hours</p>
+            
+            <fieldset>
+            <legend>Personal Info</legend>
+            <div>
+            	<label for="firstN">First name</label>
+                <input id="firstN" name="firstN" type="text" placeholder="John" required aria-required="true" autofocus >
+            </div>
+            <div>
+            	<label for="lastName">Last name</label>
+                <input id="lastName" name="lastName" type="text" placeholder="Smith" required aria-required="true" >
+            </div>
+            <div>
+            	<label for="address">Street Address</label>
+                <input id="address" name="address" type="text" placeholder="123 Main St" required aria-required="true" >
+            </div>
+            <div>
+            	<label for="city">City</label>
+                <input id="city" name="city" type="text" placeholder="Baltimore" required aria-required="true" >
+            </div>
+            <div>
+            	<label for="state">State</label>
+                <input id="state" name="state" type="text" list="states">
+                <datalist id="states">
+                	<select>
+                    	<option value="Alabama">Alabama</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Arizona">Arizona</option>
+                        <option value="Arkansas">Arkansas</option>
+                        <option value="California">California</option>
+                        <option value="Colorado">Colorado</option>
+                        <option value="Connecticut">Connecticut</option>
+                        <option value="Delaware">Delaware</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Idaho">Idaho</option>
+                        <option value="Illinois">Illinois</option>
+                        <option value="Indiana">Indiana</option>
+                        <option value="Iowa">Iowa</option>
+                        <option value="Kansas">Kansas</option>
+                        <option value="Kentucky">Kentucky</option>
+                        <option value="Louisiana">Louisiana</option>
+                        <option value="Maine">Maine</option>
+                        <option value="Maryland">Maryland</option>
+                        <option value="Massachusetts">Massachusetts</option>
+                        <option value="Michigan">Michigan</option>
+                        <option value="Minnesota">Minnesota</option>
+                        <option value="Mississippi">Mississippi</option>
+                        <option value="Missouri">Missouri</option>
+                        <option value="Montana">Montana</option>
+                        <option value="Nebraska">Nebraska</option>
+                        <option value="Nevada">Nevada</option>
+                        <option value="New Hampshire">New Hampshire</option>
+                        <option value="New Jersey">New Jersey</option>
+                        <option value="New Mexico">New Mexico</option>
+                        <option value="New York">New York</option>
+                        <option value="North Carolina">North Carolina</option>
+                        <option value="North Dakota">North Dakota</option>
+                        <option value="Ohio">Ohio</option>
+                        <option value="Oklahoma">Oklahoma</option>
+                        <option value="Oregon">Oregon</option>
+                        <option value="Pennsylvania">Pennsylvania</option>
+                        <option value="Rhode Island">Rhode Island</option>
+                        <option value="South Carolina">South Carolina</option>
+                        <option value="South Dakota">South Dakota</option>
+                        <option value="Tennessee">Tennessee</option>
+                        <option value="Texas">Texas</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Vermont">Vermont</option>
+                        <option value="Virginia">Virginia</option>
+                        <option value="Washington">Washington</option>
+                        <option value="West Virginia">West Virginia</option>
+                        <option value="Wisconsin">Wisconsin</option>
+                        <option value="Wyoming">Wyoming</option>
+                    </select>
+                </datalist>
+            </div>
+            <div>
+            	<label for="zip">Zip Code</label>
+                <input id="zip" name="zip" type="number" required aria-required="true">
+            </div>
+            <div>
+            	<label for="phoneNumber">Phone number</label>
+                <input id="phoneNumber" name="phoneNumber" type="tel" placeholder="555-555-5555" required aria-required="true">
+            </div>
+            <div>
+            	<label for="email">Email Address</label>
+                <input id="email" name="email" type="email" placeholder="email@mail.com">
+            </div>
+            
+            </fieldset>
+            
+            <fieldset>
+            <legend>Preferences</legend>
+            <div>
+            	<label for="reason">Comments</label>
+                <textarea name="textarea" rows="5" placeholder="Enter comments here" maxlength="300"></textarea>   
+            </div>
+            </fieldset>
+    
+            <fieldset id="final">
+            <div>
+            	<label for="mail">Check here if we can add you to our mailing list</label>
+                <input id="mail" name="mail" type="checkbox">
+            </div>
+            <div>
+            	<label for="submit"></label>
+                <input id="submit" name="submit" type="submit">
+            </div>
+           	</fieldset>
+        	
+            
+    	</form> 
+        
+        
+        
+        
+        
+        <div class="row">
+          <div class="large-12 columns">
+          	<footer>
+              	<p>&copy; Copyright 2013 <br>The Java House</p>
+            </footer>
+          </div>
+       	</div>
+    </div>
+
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="js/foundation.min.js"></script>
+  <!--
+  
+  <script src="js/foundation/foundation.js"></script>
+  
+  <script src="js/foundation/foundation.alerts.js"></script>
+  
+  <script src="js/foundation/foundation.clearing.js"></script>
+  
+  <script src="js/foundation/foundation.cookie.js"></script>
+  
+  <script src="js/foundation/foundation.dropdown.js"></script>
+  
+  <script src="js/foundation/foundation.forms.js"></script>
+  
+  <script src="js/foundation/foundation.joyride.js"></script>
+  
+  <script src="js/foundation/foundation.magellan.js"></script>
+  
+  <script src="js/foundation/foundation.orbit.js"></script>
+  
+  <script src="js/foundation/foundation.reveal.js"></script>
+  
+  <script src="js/foundation/foundation.section.js"></script>
+  
+  <script src="js/foundation/foundation.tooltips.js"></script>
+  
+  <script src="js/foundation/foundation.topbar.js"></script>
+  
+  <script src="js/foundation/foundation.interchange.js"></script>
+  
+  <script src="js/foundation/foundation.placeholder.js"></script>
+  
+  <script src="js/foundation/foundation.abide.js"></script>
+  
+  -->
+  
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>
